@@ -1,0 +1,110 @@
+.oly-map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.oly-map-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.oly-map-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.oly-map-section {
+    margin-bottom: 3rem;
+}
+
+.oly-section-public,
+.oly-section-admin {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.oly-section-public {
+    color: #f97316;
+}
+
+.oly-section-admin {
+    color: #475569;
+}
+
+.oly-map-grid {
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+	justify-content: center;
+}
+
+.oly-map-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.oly-map-card:hover {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.5rem);
+    border-color: #f97316;
+}
+
+.oly-map-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+    background-color: #f97316;
+    color: white;
+}
+
+.oly-map-card:hover .oly-map-icon {
+    transform: scale(1.1);
+}
+
+.oly-icon-orange {
+    background-color: #fb923c;
+}
+
+.oly-icon-gray {
+    background-color: #475569;
+}
+
+.oly-icon-simple {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.oly-map-card h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.oly-map-card p {
+    font-size: 0.875rem;
+    color: #6b7280;
+}

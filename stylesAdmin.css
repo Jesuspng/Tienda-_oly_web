@@ -1,0 +1,194 @@
+/* ===== Estilo general ===== */
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: #f6f8fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ===== Cabecera ===== */
+header {
+    background: #1f2937;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* ===== Navegación ===== */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: #374151;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #4b5563;
+}
+
+/* ===== Botón de cerrar sesión ===== */
+.logout {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.logout:hover {
+    background: #b91c1c;
+}
+
+/* ===== Contenedor principal ===== */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Títulos ===== */
+h2, h3 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+/* ===== Tablas ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+th {
+    background: #1f2937;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+tr:hover {
+    background: #e5e7eb;
+}
+
+/* ===== Botones CRUD ===== */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+.btn-agregar {
+    background: #16a34a;
+}
+
+.btn-editar {
+    background: #2563eb;
+}
+
+.btn-eliminar {
+    background: #dc2626;
+}
+
+.btn-agregar:hover {
+    background: #15803d;
+}
+
+.btn-editar:hover {
+    background: #1d4ed8;
+}
+
+.btn-eliminar:hover {
+    background: #b91c1c;
+}
+
+/* ===== Formularios (para agregar y editar) ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+button[type="submit"] {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background: #1d4ed8;
+}
+
+/* ===== Resumen de cortes de caja ===== */
+.resumen {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}

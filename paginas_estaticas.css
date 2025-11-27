@@ -1,0 +1,60 @@
+/* Contenedor general de la página */
+.pg-cntr-987 {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 0 10px !important;
+}
+
+/* Títulos h1 de la página */
+.pg-h1-321 {
+    color: var(--orange-dark) !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important; /* como en tu HTML original */
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+}
+
+/* Títulos h2 de secciones */
+.pg-h2-654 {
+    color: var(--orange-dark) !important;
+    text-align: center !important;
+    margin-top: 30px !important; /* como tus divs con margin-top:40px/30px */
+    margin-bottom: 15px !important;
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+}
+
+/* Párrafos */
+.pg-p-111, .pg-p-112 {
+    font-size: 1.2rem !important;
+    text-align: justify !important;
+    line-height: 1.6 !important;
+    margin-top: 20px !important;  /* para el primer párrafo */
+    margin-bottom: 20px !important;
+}
+
+/* Párrafos siguientes sin margen superior extra */
+.pg-p-112 {
+    margin-top: 0 !important; 
+}
+
+/* Contenedor centrado para imágenes */
+.pg-img-cntr-999 {
+    text-align: center !important;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+.pg-img-888 {
+    width: 80% !important;
+    max-width: 300px !important;
+}
+
+.pg-h1-555 { color: var(--orange-dark); text-align:center; margin-bottom:1.5rem; }
+.pg-h2-777, .pg-h2-778, .pg-h2-779 { color: var(--orange-dark); text-align:center; margin-bottom:1rem; margin-top:2rem; }
+.pg-p-333, .pg-p-334, .pg-p-335 { font-size:1.2rem; text-align:justify; line-height:1.6; margin-top:20px; }
+.pg-p-336 { font-size:0.8rem; text-align:center; margin-top:15px; }
+.pg-div-111, .pg-div-112, .pg-div-113 { margin-top:25px; }
+.pg-ul-111 { font-size:1.2rem; line-height:1.6; }
+

@@ -1,0 +1,47 @@
+.detalle-producto {
+  display: flex;
+  flex-wrap: nowrap;           
+  align-items: stretch;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.detalle-producto img {
+  width: 350px;                
+  height: 350px;        
+  object-fit: cover;         
+  background: none;
+  flex-shrink: 0;           
+}
+
+.detalle-producto .info {
+  flex: 1;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+}
+
+.detalle-producto .info h1 {
+  color: var(--orange-dark);
+  margin-top: 0;
+}
+
+.volver {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 14px;
+  background: var(--orange-dark);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.volver:hover {
+  background: var(--orange);
+}
