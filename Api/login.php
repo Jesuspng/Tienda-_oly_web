@@ -2,7 +2,6 @@
 header('Content-Type: application/json');
 include_once __DIR__ . '/coneccion.php';
 
-// Validación básica
 if (!isset($_POST['alias']) || !isset($_POST['contrasena'])) {
     echo json_encode([
         'success' => false,
@@ -14,7 +13,6 @@ if (!isset($_POST['alias']) || !isset($_POST['contrasena'])) {
 $alias = $_POST['alias'];
 $contrasena = $_POST['contrasena'];
 
-// Prepared statement seguro
 $sql = "SELECT usuario_id, alias, password_hash, rol, activo 
         FROM usuarios 
         WHERE alias = ? AND activo = 1";
@@ -24,12 +22,10 @@ $stmt->bind_param("s", $alias);
 $stmt->execute();
 $result = $stmt->get_result();
 
-// Si existe el usuario
 if ($result->num_rows > 0) {
 
     $row = $result->fetch_assoc();
 
-    // Verificar contraseña segura (password_verify)
     if (password_verify($contrasena, $row['password_hash'])) {
 
         echo json_encode([

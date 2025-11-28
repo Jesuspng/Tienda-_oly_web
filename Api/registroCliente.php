@@ -2,7 +2,6 @@
 header('Content-Type: application/json');
 include_once __DIR__ . '/coneccion.php';
 
-// Verificar método POST
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     echo json_encode([
         "success" => false,
@@ -11,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     exit;
 }
 
-// Recibir datos del body
 $alias      = $_POST['alias'] ?? '';
 $password   = $_POST['password'] ?? '';
 $nombre     = $_POST['nombre'] ?? '';
@@ -22,7 +20,6 @@ $direccion  = $_POST['direccion'] ?? '';
 $fecha_nac  = $_POST['fecha_nacimiento'] ?? '';
 
 
-// VALIDACIONES ==================================
 
 if ($alias === "" || $password === "" || $nombre === "" || $email === "") {
     echo json_encode([
@@ -79,7 +76,6 @@ if ($stmt->num_rows > 0) {
 $stmt->close();
 
 
-// INSERTAR USUARIO ===============================
 
 $hash = password_hash($password, PASSWORD_BCRYPT);
 
@@ -102,7 +98,6 @@ $usuario_id = $con->insert_id;
 $stmt->close();
 
 
-// INSERTAR CLIENTE ===============================
 
 $stmt = $con->prepare("
     INSERT INTO clientes (
@@ -135,7 +130,6 @@ if (!$stmt->execute()) {
 
 $stmt->close();
 
-// RESPUESTA FINAL ===============================
 
 echo json_encode([
     "success" => true,
